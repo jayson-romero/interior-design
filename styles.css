@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 92%;
+	height: 100%;
+	margin: auto;
+	/* border: red 1px solid; */
+}
+
+h1 {
+	/* font-family: "Playfair Display", serif; */
+	font-family: "Assistant", serif;
+}
+
+/* ===== MAIN NAVBAR =====  */
+
+.header-section {
+	background-color: #ffffff;
+}
+.header-section_content {
+	padding: 16px 0px;
+}
+.main-navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-navbar .logo-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 48px;
+}
+.main-navbar .logo-links .logo {
+	margin-right: 10px;
+}
+.main-navbar .link {
+	display: none;
+	font-family: "Assistant", serif;
+	text-decoration: none;
+	color: #352c2c;
+	font-size: 16px;
+	font-weight: 400;
+}
+.main-navbar .menu-icon-contacts {
+	display: flex;
+	justify-content: space-between;
+	gap: 45px;
+}
+.main-navbar .menu-icon-contacts .language {
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+/* tablet style  */
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 700px;
+	}
+
+	.header-section_content {
+		padding: 39px 0px;
+	}
+}
+
+/* dekstop style  */
+@media only screen and (min-width: 1250px) {
+	.container {
+		width: 1170px;
+	}
+	.main-navbar .menu-icon {
+		display: none;
+	}
+	.main-navbar .link {
+		display: flex;
+	}
+}
